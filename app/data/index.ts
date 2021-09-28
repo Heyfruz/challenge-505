@@ -101,3 +101,9 @@ export const transaction: TransactionProps[] = [
     image: require('../assets/stripe.png'),
   },
 ];
+
+//For security reasons, my apiKey won't be uploaded to the github server. A key can be generated from https://account.mapbox.com/
+//and creating a file called 'key.ts' then adding it to the
+//this to the file export const apiKey = 'YOUR_API_KEY';
+
+export {apiKey} from './key';

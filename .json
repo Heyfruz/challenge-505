@@ -1,0 +1,183 @@
+{
+  "type": "FeatureCollection",
+  "query": [-122.0840185, 37.421836],
+  "features": [
+    {
+      "id": "poi.257698044467",
+      "type": "Feature",
+      "place_type": ["poi"],
+      "relevance": 1,
+      "properties": {
+        "foursquare": "4b22b86ef964a5206e4c24e3",
+        "landmark": true,
+        "address": "1600 Amphitheatre Pkwy",
+        "category": "beauty, hair, salon, barber, hairdresser"
+      },
+      "text": "Onsite Haircuts - Googleplex",
+      "place_name": "Onsite Haircuts - Googleplex, 1600 Amphitheatre Pkwy, Mountain View, California 94043, United States",
+      "center": [-122.084079, 37.421915],
+      "geometry": {"coordinates": [-122.084079, 37.421915], "type": "Point"},
+      "context": [
+        {"id": "postcode.6895964003013110", "text": "94043"},
+        {
+          "id": "place.10770213958111820",
+          "wikidata": "Q486860",
+          "text": "Mountain View"
+        },
+        {
+          "id": "district.1083277613059000",
+          "wikidata": "Q110739",
+          "text": "Santa Clara County"
+        },
+        {
+          "id": "region.9803118085738010",
+          "wikidata": "Q99",
+          "short_code": "US-CA",
+          "text": "California"
+        },
+        {
+          "id": "country.19678805456372290",
+          "wikidata": "Q30",
+          "short_code": "us",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "postcode.6895964003013110",
+      "type": "Feature",
+      "place_type": ["postcode"],
+      "relevance": 1,
+      "properties": {},
+      "text": "94043",
+      "place_name": "Mountain View, California 94043, United States",
+      "bbox": [
+        -122.108311159188, 37.3858680133729, -122.034670009771, 37.452076930274
+      ],
+      "center": [-122.08, 37.41],
+      "geometry": {"type": "Point", "coordinates": [-122.08, 37.41]},
+      "context": [
+        {
+          "id": "place.10770213958111820",
+          "wikidata": "Q486860",
+          "text": "Mountain View"
+        },
+        {
+          "id": "district.1083277613059000",
+          "wikidata": "Q110739",
+          "text": "Santa Clara County"
+        },
+        {
+          "id": "region.9803118085738010",
+          "wikidata": "Q99",
+          "short_code": "US-CA",
+          "text": "California"
+        },
+        {
+          "id": "country.19678805456372290",
+          "wikidata": "Q30",
+          "short_code": "us",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "place.10770213958111820",
+      "type": "Feature",
+      "place_type": ["place"],
+      "relevance": 1,
+      "properties": {"wikidata": "Q486860"},
+      "text": "Mountain View",
+      "place_name": "Mountain View, California, United States",
+      "bbox": [-122.117853314, 37.357677398, -122.034670094, 37.451639923],
+      "center": [-122.082, 37.3856],
+      "geometry": {"type": "Point", "coordinates": [-122.082, 37.3856]},
+      "context": [
+        {
+          "id": "district.1083277613059000",
+          "wikidata": "Q110739",
+          "text": "Santa Clara County"
+        },
+        {
+          "id": "region.9803118085738010",
+          "wikidata": "Q99",
+          "short_code": "US-CA",
+          "text": "California"
+        },
+        {
+          "id": "country.19678805456372290",
+          "wikidata": "Q30",
+          "short_code": "us",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "district.1083277613059000",
+      "type": "Feature",
+      "place_type": ["district"],
+      "relevance": 1,
+      "properties": {"wikidata": "Q110739"},
+      "text": "Santa Clara County",
+      "place_name": "Santa Clara County, California, United States",
+      "bbox": [-122.202653, 36.892976, -121.208178, 37.484637],
+      "center": [-121.97, 37.36],
+      "geometry": {"type": "Point", "coordinates": [-121.97, 37.36]},
+      "context": [
+        {
+          "id": "region.9803118085738010",
+          "wikidata": "Q99",
+          "short_code": "US-CA",
+          "text": "California"
+        },
+        {
+          "id": "country.19678805456372290",
+          "wikidata": "Q30",
+          "short_code": "us",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "region.9803118085738010",
+      "type": "Feature",
+      "place_type": ["region"],
+      "relevance": 1,
+      "properties": {"wikidata": "Q99", "short_code": "US-CA"},
+      "text": "California",
+      "place_name": "California, United States",
+      "bbox": [
+        -124.514829293866, 32.5019647016422, -114.131210004164, 42.0095039998439
+      ],
+      "center": [-119.699375153073, 37.0743595873],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-119.699375153073, 37.0743595873]
+      },
+      "context": [
+        {
+          "id": "country.19678805456372290",
+          "wikidata": "Q30",
+          "short_code": "us",
+          "text": "United States"
+        }
+      ]
+    },
+    {
+      "id": "country.19678805456372290",
+      "type": "Feature",
+      "place_type": ["country"],
+      "relevance": 1,
+      "properties": {"wikidata": "Q30", "short_code": "us"},
+      "text": "United States",
+      "place_name": "United States",
+      "bbox": [-179.9, 18.8163608007951, -66.8847646185949, 71.4202919997506],
+      "center": [-97.9222112121185, 39.3812661305678],
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-97.9222112121185, 39.3812661305678]
+      }
+    }
+  ],
+  "attribution": "NOTICE: © 2021 Mapbox and its suppliers. All rights reserved. Use of this data is subject to the Mapbox Terms of Service (https://www.mapbox.com/about/maps/). This response and the information it contains may not be retained. POI(s) provided by Foursquare."
+}

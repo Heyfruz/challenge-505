@@ -1,23 +1,33 @@
-import React from 'react';
-import {StyleSheet, View, Dimensions, Text, FlatList} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {StyleSheet, View, Text, FlatList} from 'react-native';
 import Animated, {
   useAnimatedRef,
   useAnimatedScrollHandler,
   useSharedValue,
 } from 'react-native-reanimated';
 
-const emptyData: [] = [];
-const renderNullItem = () => null;
-
-import {card, service, transaction} from '../data';
+import {card, service, transaction, width, height} from '../data';
 
 import {Card, ServiceCard, TransactionCard, Header} from '../components';
 
-const {width, height} = Dimensions.get('window');
+import {LocationPermission} from '../api';
+
+const emptyData: [] = [];
+const renderNullItem = () => null;
 
 function Home(): JSX.Element | null {
+  const [visible, setVisible] = useState(false);
+
   const aref = useAnimatedRef<Animated.ScrollView>() as any;
   const translateX = useSharedValue(0);
+
+  useEffect(() => {
+    async function response() {
+      setVisible(await LocationPermission());
+    }
+
+    response();
+  }, []);
 
   const scrollHandler = useAnimatedScrollHandler(event => {
     translateX.value = event.contentOffset.x;
@@ -83,9 +93,15 @@ function Home(): JSX.Element | null {
     );
   }
 
+  //This should contain logic to determine what happens when a user refuses to share their location
+
+  if (visible === false) {
+    return <View />;
+  }
+
   return (
     <>
-      <Header location="" />
+      <Header />
       <FlatList
         data={emptyData}
         renderItem={renderNullItem}
