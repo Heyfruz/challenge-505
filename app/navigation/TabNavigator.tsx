@@ -33,7 +33,8 @@ export default function TabNavigator(): JSX.Element {
           height: 60,
           padding: 20,
         },
-        headerShown: false,
+        headerTitle: '',
+        headerTransparent: true,
       })}>
       <Screen name="Home" component={Home} />
       <Screen name="Profile" component={Profile} />
